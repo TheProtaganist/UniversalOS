@@ -1,0 +1,1 @@
+### 1. make based on pure functions rather than bit 2^n memory using low level assembly and c++

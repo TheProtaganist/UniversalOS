@@ -1,0 +1,268 @@
+# ============================================
+# UniversalOS .gitignore
+# ============================================
+
+# ============================================
+# Build Outputs
+# ============================================
+/build/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Cargo (Rust)
+**/target/
+Cargo.lock
+**/*.rs.bk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# Logs and Debug Output
+# ============================================
+/logs/*
+!/logs/winners/
+!/logs/.gitkeep
+!/logs/winners/.gitkeep
+*.log
+*.log.*
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (CLion, PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+.*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OS Files
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# Temporary Files
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+
+# ============================================
+# Test and Coverage
+# ============================================
+/build/test/
+/build/coverage/
+*.gcda
+*.gcno
+*.gcov
+coverage/
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.tox/
+.hypothesis/
+
+# ============================================
+# Documentation Build
+# ============================================
+/build/docs/
+/docs/api/generated/
+*.dox
+Doxyfile.bak
+
+# ============================================
+# Package Managers
+# ============================================
+# Node.js (if used for tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================
+# Security and Secrets
+# ============================================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+.env
+.env.local
+.env.*.local
+secrets/
+credentials/
+
+# ============================================
+# Quantum-Specific
+# ============================================
+# Quantum state dumps (large binary files)
+*.qstate
+*.qutrit
+*.mwave
+
+# Algorithm test results (except winners)
+/tests/algorithms/results/*
+!/tests/algorithms/results/.gitkeep
+
+# ============================================
+# System-Specific
+# ============================================
+# Bootloader builds
+/src/bootloader/build/
+*.efi
+*.img
+*.iso
+
+# Kernel builds
+/src/kernel/build/
+*.ko
+*.mod
+*.mod.c
+modules.order
+Module.symvers
+
+# Desktop builds
+/src/desktop/build/
+
+# ============================================
+# Miscellaneous
+# ============================================
+# Core dumps
+core
+core.*
+vgcore.*
+
+# Profiling data
+*.prof
+*.perf
+perf.data
+perf.data.old
+callgrind.out.*
+cachegrind.out.*
+
+# Valgrind
+*.memcheck
+*.valgrind
+
+# GDB
+.gdb_history
+
+# Tags
+tags
+TAGS
+.tags
+.tags_sorted_by_file
+
+# ctags
+.ctags
+
+# cscope
+cscope.out
+cscope.in.out
+cscope.po.out
+cscope.files
+
+# ============================================
+# Keep These Files
+# ============================================
+# Keep .gitkeep files in empty directories
+!.gitkeep
+
+# Keep algorithm winners
+!/logs/winners/**
+
+# Keep test fixtures
+!/tests/fixtures/**
